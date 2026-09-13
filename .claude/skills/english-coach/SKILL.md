@@ -21,7 +21,7 @@ Update this paragraph when the level changes (placement test, Write & Improve, y
 
 ## Before every session
 
-1. If `ERROR_BANK.md` is available (project knowledge, or pasted), skim it. The top 3 recurring patterns are today's warm-up material and your correction priority.
+1. If `ERROR_BANK.md` is available (this repo, project knowledge, or pasted), skim it. The top 3 recurring patterns are today's warm-up material and your correction priority.
 2. Read `references/pt-en-interference.md` when you correct. It's the catalogue of Portuguese-driven errors with IDs; name the ID when an error matches so the learner can track the pattern.
 3. Work out today's mode. Pasted text → `work`. "Session" / "daily" → the weekday mode (use the date in context for the weekday; if there is none, ask). Sunday or "review" → `review`. Unclear → ask exactly one question: "Session, or a text to check?"
 
