@@ -28,6 +28,7 @@ english-project/
 ├── ERROR_BANK.md                  ← your syllabus: recurring errors by pattern ID + vocab to recycle
 ├── PROGRESS.md                    ← level checks, daily log, weekly review template
 ├── english-coach.skill            ← installable Claude skill (Save skill button)
+├── build-skill.sh                 ← rebuilds english-coach.skill from skills/english-coach/
 └── skills/english-coach/
     ├── SKILL.md                   ← how the coach runs a 15-minute session
     └── references/
@@ -63,4 +64,4 @@ Details in `skills/english-coach/SKILL.md`; the reasoning in `LEARNING_PLAN.md`.
 
 ## Changing the plan
 
-Edit `LEARNING_PLAN.md` first, then keep `SKILL.md` consistent (the week table and the modes must match). Change the plan every 4 weeks based on the Sunday reviews — not on a bad day.
+Edit `LEARNING_PLAN.md` first, then keep `SKILL.md` consistent (the week table and the modes must match). After editing anything under `skills/english-coach/`, run `./build-skill.sh` and re-install the `.skill` — otherwise the skill saved in your account stays on the old version while the repo looks correct. Change the plan every 4 weeks based on the Sunday reviews — not on a bad day.
