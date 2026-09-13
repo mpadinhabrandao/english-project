@@ -1,0 +1,59 @@
+name: Build skill package
+
+# Keeps english-coach.skill in step with .claude/skills/english-coach/.
+# Edit the source, push, and the rebuilt package is committed back here.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.claude/skills/english-coach/**'
+      - 'build-skill.sh'
+      - '.github/workflows/build-skill.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild the package
+        run: ./build-skill.sh
+
+      - name: Decide whether anything actually changed
+        run: |
+          if git diff --quiet -- english-coach.skill; then
+            echo "changed=false" >> "$GITHUB_ENV"
+            echo "Package is already up to date."
+            exit 0
+          fi
+
+          # Bytes differ. Compare the contents before committing, so a zip
+          # metadata wobble never lands as a commit.
+          mkdir -p /tmp/old /tmp/new
+          git show HEAD:english-coach.skill > /tmp/old.skill
+          unzip -q /tmp/old.skill -d /tmp/old
+          unzip -q english-coach.skill -d /tmp/new
+
+          if diff -r /tmp/old /tmp/new > /dev/null; then
+            echo "changed=false" >> "$GITHUB_ENV"
+            echo "Only zip metadata differs - discarding the rebuild."
+            git checkout -- english-coach.skill
+          else
+            echo "changed=true" >> "$GITHUB_ENV"
+            echo "Skill contents changed:"
+            diff -r /tmp/old /tmp/new || true
+          fi
+
+      - name: Commit the rebuilt package
+        if: env.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add english-coach.skill
+          git commit -m "Rebuild english-coach.skill from source"
+          git push

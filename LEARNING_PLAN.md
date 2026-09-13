@@ -27,7 +27,7 @@ You asked to start from the beginning. We do — but by *testing* A1/A2 instead 
 - **Day 1 (~25 min, replaces the session):** [Cambridge Test your English](https://www.cambridgeenglish.org/test-your-english/), free. Write the level in `PROGRESS.md`.
 - **Day 2:** write 100–150 words ("My job and why I'm learning English") in [Write & Improve](https://writeandimprove.com/), free — it returns a CEFR estimate of your writing. Record it.
 - **Day 3:** record a 60-second voice note in English about your week. Don't judge it; keep the file. Week 12 will compare.
-- **Days 1–28, inside the warm-ups — the A1–A2 sweep:** the coach tests 3 checklist items a day by making you *produce* them (`skills/english-coach/references/a1-a2-checklist.md`, 44 items). ✅ after two correct productions; ❌ goes to the error bank and becomes a micro-lesson. In about 4 weeks you will have covered "the beginning" completely, spending time only on real gaps.
+- **Days 1–28, inside the warm-ups — the A1–A2 sweep:** the coach tests 3 checklist items a day by making you *produce* them (`.claude/skills/english-coach/references/a1-a2-checklist.md`, 44 items). ✅ after two correct productions; ❌ goes to the error bank and becomes a micro-lesson. In about 4 weeks you will have covered "the beginning" completely, spending time only on real gaps.
 - Keep the two courses if you enjoy them, as *input*. Don't do their exercises on top of the session; the session already covers output.
 
 ## 3. The 15-minute session — the core loop

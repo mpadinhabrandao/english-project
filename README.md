@@ -12,7 +12,7 @@ We looked at what already exists before building anything (see below). Nothing w
 
 ## Quick start — 5 minutes
 
-1. **Install the coach.** Open `english-coach.skill` → **Save skill**. If skills aren't available on your plan, paste the body of `skills/english-coach/SKILL.md` into this Claude Project's instructions and add the two files in `skills/english-coach/references/` to the Project's knowledge.
+1. **Install the coach.** Open `english-coach.skill` → **Save skill**. If skills aren't available on your plan, paste the body of `.claude/skills/english-coach/SKILL.md` into this Claude Project's instructions and add the two files in `.claude/skills/english-coach/references/` to the Project's knowledge.
 2. **Give it your memory.** Add `ERROR_BANK.md` to the Project's knowledge. Re-add it after each Sunday review.
 3. **Day 1:** take [Cambridge Test your English](https://www.cambridgeenglish.org/test-your-english/) (free, ~25 min). Write the result in `PROGRESS.md`. That's today's session.
 4. **Every day after:** say **"daily session"** — or paste a Slack message / PR description with **"check this"**.
@@ -27,9 +27,9 @@ english-project/
 ├── LEARNING_PLAN.md               ← the method, the week, the 12-week roadmap, the tools
 ├── ERROR_BANK.md                  ← your syllabus: recurring errors by pattern ID + vocab to recycle
 ├── PROGRESS.md                    ← level checks, daily log, weekly review template
-├── english-coach.skill            ← installable Claude skill (Save skill button)
-├── build-skill.sh                 ← rebuilds english-coach.skill from skills/english-coach/
-└── skills/english-coach/
+├── english-coach.skill            ← installable Claude skill (Save skill button) — built, don't edit
+├── build-skill.sh                 ← rebuilds english-coach.skill from the skill source
+└── .claude/skills/english-coach/  ← the skill source; Claude Code loads it automatically here
     ├── SKILL.md                   ← how the coach runs a 15-minute session
     └── references/
         ├── pt-en-interference.md  ← ~60 Portuguese-driven error patterns with IDs (S04, P01, F21…)
@@ -45,7 +45,7 @@ Keep the folder in a private Git repo — `git log` on `ERROR_BANK.md` is a prog
 `review` → Sundays, 10 minutes.
 `sweep` → the A1–A2 checklist, 3 items a day inside the warm-up, for the first ~4 weeks.
 
-Details in `skills/english-coach/SKILL.md`; the reasoning in `LEARNING_PLAN.md`.
+Details in `.claude/skills/english-coach/SKILL.md`; the reasoning in `LEARNING_PLAN.md`.
 
 ## What already exists — and why we didn't rebuild it
 
@@ -64,4 +64,4 @@ Details in `skills/english-coach/SKILL.md`; the reasoning in `LEARNING_PLAN.md`.
 
 ## Changing the plan
 
-Edit `LEARNING_PLAN.md` first, then keep `SKILL.md` consistent (the week table and the modes must match). After editing anything under `skills/english-coach/`, run `./build-skill.sh` and re-install the `.skill` — otherwise the skill saved in your account stays on the old version while the repo looks correct. Change the plan every 4 weeks based on the Sunday reviews — not on a bad day.
+Edit `LEARNING_PLAN.md` first, then keep `SKILL.md` consistent (the week table and the modes must match). After editing anything under `.claude/skills/english-coach/`, push: a GitHub Action rebuilds `english-coach.skill` and commits it. Then download it and re-install, or run `./build-skill.sh` locally if you want it straight away — the skill saved in your account never updates itself. In Claude Code inside this repo the source is picked up directly, no rebuild needed. Change the plan every 4 weeks based on the Sunday reviews — not on a bad day.

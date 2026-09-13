@@ -1,6 +1,6 @@
 # Error bank
 
-The most useful file in this project. Every recurring error lives here with its pattern ID (see `skills/english-coach/references/pt-en-interference.md`), the sentence you actually wrote, the fix, and a count. The coach reads this before each session and builds warm-ups from the top of the list. When a pattern is produced correctly 3 sessions in a row, move it to **Mastered**.
+The most useful file in this project. Every recurring error lives here with its pattern ID (see `.claude/skills/english-coach/references/pt-en-interference.md`), the sentence you actually wrote, the fix, and a count. The coach reads this before each session and builds warm-ups from the top of the list. When a pattern is produced correctly 3 sessions in a row, move it to **Mastered**.
 
 How rows get here: at the end of each session the coach outputs ready-made rows — paste them in. If the pattern already exists, bump the count and update the date instead of adding a row.
 
