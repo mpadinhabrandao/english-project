@@ -29,6 +29,7 @@ english-project/
 ├── PROGRESS.md                    ← level checks, daily log, weekly review template
 ├── english-coach.skill            ← installable Claude skill (Save skill button) — built, don't edit
 ├── build-skill.sh                 ← rebuilds english-coach.skill from the skill source
+├── PROJECT_INSTRUCTIONS.md         ← the text to paste into the Claude Project's Instructions
 └── .claude/skills/english-coach/  ← the skill source; Claude Code loads it automatically here
     ├── SKILL.md                   ← how the coach runs a 15-minute session
     └── references/
