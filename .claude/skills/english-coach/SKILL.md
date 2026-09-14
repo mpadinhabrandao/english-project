@@ -31,7 +31,7 @@ Each mode fits in 15 minutes. The time boxes tell you how much to put in each me
 
 ### `daily` — the default (Mon Write · Tue Read · Wed Speak · Thu Grammar · Fri Listen · Sat Free)
 
-1. **Warm-up (1 exchange, ~2 min).** Three retrieval items: 2 from `ERROR_BANK.md` patterns (give a Portuguese sentence or a broken English one → the learner produces the correct English) + 1 vocabulary item from a previous log. While the A1–A2 sweep is running (`references/a1-a2-checklist.md`), use up to 3 sweep items instead.
+1. **Warm-up (1 exchange, ~2 min).** Three retrieval items: 2 from `ERROR_BANK.md` patterns — pick the highest Count first, and among equals the oldest **Last tested**, so quiet patterns come back instead of only the top of the list — (give a Portuguese sentence or a broken English one → the learner produces the correct English) + 1 vocabulary item from a previous log. While the A1–A2 sweep is running (`references/a1-a2-checklist.md`), use up to 3 sweep items instead.
 2. **Main task (2 exchanges, ~8 min), by weekday:**
    - **Write.** 5–7 sentences on a rotating theme: yesterday at work · a bug and how you fixed it · your weekend · an opinion · a plan · describe a colleague · explain a tech concept to a non-technical friend. Then correct (format below).
    - **Read.** Give a 120–180-word text at their level plus one, on something they would actually read — tech, e-commerce, Portugal, science — with 5 target words in bold. Ask 3 questions whose answers need the target words. Correct the answers.
@@ -52,7 +52,7 @@ Same as the weekday blocks above, run on their own.
 
 ### `sweep` — the A1–A2 checklist
 
-The learner wants to start from the beginning without repeating what they already know. Test 3 items a day from `references/a1-a2-checklist.md` by production; mark ✅ after two correct productions on different days; ❌ items go to `ERROR_BANK.md`. Report progress as "A1: 14/22 ✅ · A2: 3/22 ✅". Runs inside the warm-up until done; never let it eat the session.
+The learner wants to start from the beginning without repeating what they already know. Test 3 items a day from `references/a1-a2-checklist.md` by production. That file ships inside the skill package and is read-only — record the status in the **A1-A2 sweep** section of `PROGRESS.md` instead: ✅ after two correct productions on different days; ❌ items go to `ERROR_BANK.md`. Report progress as "A1: 14/22 ✅ · A2: 3/22 ✅". Runs inside the warm-up until done; never let it eat the session.
 
 ### `review` — Sunday, 10 minutes
 
@@ -88,10 +88,10 @@ patterns: V01 present continuous (x1) · N04 uncountable "planning" (x1) · S08 
 vocab: roll back · on call · edge case
 next: Tue — Read
 
-| V01 | Present continuous for temporary activity | "Currently I do two courses" | "I'm currently doing two courses" | 2026-09-14 | 1 | active |
+| V01 | Present continuous for temporary activity | "Currently I do two courses" | "I'm currently doing two courses" | 2026-09-14 | 2026-09-14 | 1 | active |
 ```
 
-One row per *new* pattern or new example, in the `ERROR_BANK.md` column order (ID · Pattern · You wrote · Correct · First seen · Count · Status). Keep the LOG line and the rows in one code block so they can be copied with a single tap.
+One row per *new* pattern or new example, in the `ERROR_BANK.md` column order (ID · Pattern · You wrote · Correct · First seen · Last tested · Count · Status). When you re-test an existing pattern, bump its Count and set Last tested to today. Keep the LOG line and the rows in one code block so they can be copied with a single tap.
 
 ## Level guide — to calibrate tasks and your own language
 

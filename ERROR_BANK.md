@@ -8,20 +8,20 @@ Seeded on 2026-09-13 from your first message in this project. That message was c
 
 ## Active
 
-| ID | Pattern | You wrote | Correct | First seen | Count | Status |
-|---|---|---|---|---|---|---|
-| S04 | *what* vs *which* + missing *is* | "which the best way to learn" | "what's the best way to learn" | 2026-09-13 | 1 | active |
-| V01 | Present continuous for a temporary activity | "Currently I do two courses" | "I'm currently doing two courses" | 2026-09-13 | 1 | active |
-| S08 | *prefer / want / need* + **to** | "i prefer star at the beginning" | "I'd prefer to start from the beginning" | 2026-09-13 | 1 | active |
-| S07 | *before / after* + -ing or a clause | "Before start I think we need" | "Before we start, I think we need" | 2026-09-13 | 1 | active |
-| N04 | Uncountable noun used as countable | "create a planning" | "create a plan" | 2026-09-13 | 1 | active |
-| N03 | *a* before a plural | "create a skills/agents" | "create skills/agents" | 2026-09-13 | 1 | active |
-| S02 | Subject before verb (PT puts the verb first) | "search if already exists some project" | "check whether a project like this already exists" | 2026-09-13 | 1 | active |
-| F21 | *proposal* (proposta) vs *purpose* (propósito) | "some project to this proposal" | "a project for this purpose" | 2026-09-13 | 1 | active |
-| C01 | *than*, not *that*, after a comparative | "something better that only us" | "something better than we could on our own" | 2026-09-13 | 1 | active |
-| V03 | Past tense for a completed action | "other people have de same ideas and make something" | "other people have had the same idea and made something" | 2026-09-13 | 1 | active |
-| T01 | Typing: *de* → *the* | "de Cambridgeshire method", "de same ideas" | "the Cambridge method", "the same ideas" | 2026-09-13 | 2 | active |
-| T02 | Capital *I* | "i prefer" | "I prefer" | 2026-09-13 | 1 | active |
+| ID | Pattern | You wrote | Correct | First seen | Last tested | Count | Status |
+|---|---|---|---|---|---|---|---|
+| S04 | *what* vs *which* + missing *is* | "which the best way to learn" | "what's the best way to learn" | 2026-09-13 | - | 1 | active |
+| V01 | Present continuous for a temporary activity | "Currently I do two courses" | "I'm currently doing two courses" | 2026-09-13 | - | 1 | active |
+| S08 | *prefer / want / need* + **to** | "i prefer star at the beginning" | "I'd prefer to start from the beginning" | 2026-09-13 | - | 1 | active |
+| S07 | *before / after* + -ing or a clause | "Before start I think we need" | "Before we start, I think we need" | 2026-09-13 | - | 1 | active |
+| N04 | Uncountable noun used as countable | "create a planning" | "create a plan" | 2026-09-13 | - | 1 | active |
+| N03 | *a* before a plural | "create a skills/agents" | "create skills/agents" | 2026-09-13 | - | 1 | active |
+| S02 | Subject before verb (PT puts the verb first) | "search if already exists some project" | "check whether a project like this already exists" | 2026-09-13 | - | 1 | active |
+| F21 | *proposal* (proposta) vs *purpose* (propósito) | "some project to this proposal" | "a project for this purpose" | 2026-09-13 | - | 1 | active |
+| C01 | *than*, not *that*, after a comparative | "something better that only us" | "something better than we could on our own" | 2026-09-13 | - | 1 | active |
+| V03 | Past tense for a completed action | "other people have de same ideas and make something" | "other people have had the same idea and made something" | 2026-09-13 | - | 1 | active |
+| T01 | Typing: *de* → *the* | "de Cambridgeshire method", "de same ideas" | "the Cambridge method", "the same ideas" | 2026-09-13 | - | 2 | active |
+| T02 | Capital *I* | "i prefer" | "I prefer" | 2026-09-13 | - | 1 | active |
 
 ## Mastered
 

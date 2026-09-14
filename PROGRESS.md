@@ -16,6 +16,19 @@
 | | Write & Improve, 100–150 words on "My job and why I'm learning English" | | Week 1, then every 4 weeks (weeks 5, 9, 12) |
 | | 60-second voice note in English | (keep the file) | Week 1 baseline — compare in week 12 |
 
+## A1-A2 sweep
+
+3 items a day inside the warm-up, weeks 1-4. The checklist itself lives in the skill
+(`.claude/skills/english-coach/references/a1-a2-checklist.md`) and is read-only; the status lives here.
+
+Mark IDs as you go. OK = produced correctly twice on different days. A failed item goes to `ERROR_BANK.md`.
+
+- **A1 (0/22):** -
+- **A2 (0/22):** -
+
+| Date | Items tested | Result |
+|---|---|---|
+
 ## Daily log
 
 Paste the coach's `LOG` line here, one per day. Missed days are simply absent — no catching up, no notes about it.

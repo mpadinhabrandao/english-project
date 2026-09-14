@@ -11,6 +11,8 @@ Rules for the coach:
 
 Status: ⬜ not tested · ✅ passed twice · ❌ failed → in error bank
 
+The Status column below is a template. This file is read-only (it ships inside the skill package) — keep the live status in the **A1-A2 sweep** section of `PROGRESS.md`.
+
 ## A1
 
 | # | Can do | Quick test prompt | Status |
